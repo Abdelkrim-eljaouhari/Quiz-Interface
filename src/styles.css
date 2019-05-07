@@ -1,0 +1,183 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,900");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("https://images.pexels.com/photos/754082/pexels-photo-754082.jpeg?cs=srgb&dl=blur-blurred-background-colors-754082.jpg&fm=jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+}
+
+.most-container {
+  background-color: rgba(0, 0, 0, 0.575);
+  height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+body h4 {
+  color: white;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+.quiz-percentage {
+  margin-top: 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.541);
+  color: black;
+  text-align: center;
+  position: relative;
+}
+
+.quiz-percentage .quiz-percentage_div1 {
+  background-color: rgb(6, 109, 6);
+  transition: all 0.25s ease-out;
+}
+.quiz-percentage_div2 {
+  height:20px;
+}
+.quiz-percentage p {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+.quiz-percentage span {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+p.quiz-questions {
+  background-color: #484445;
+  padding: 1em 0;
+  position: relative;
+  text-indent: 10px;
+  border: 1px solid #ffffff99;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.7px;
+  color: rgba(255, 255, 255, 0.774);
+}
+p.quiz-questions::first-letter {
+  color: blue;
+}
+
+p.quiz-questions::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #484445;
+  position: absolute;
+  bottom: -10px;
+  left: 40px;
+  transform: rotate(43deg);
+}
+
+.collections {
+  width: 100%;
+  background-color: rgba(234, 214, 225, 0.94);
+  color: rgba(37, 37, 247, 0.918);
+  font-family: "Playfair Display", serif;
+  color: black;
+  margin-top: 20px;
+}
+.collection-items {
+  border: 1px solid rgba(44, 43, 43, 0.39);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+.collection-items:hover {
+  background-color: lightblue;
+  color: tomato;
+}
+.collection-items:hover span {
+  color: tomato;
+}
+
+.question-classment {
+  background-color: #132dc7c2;
+  color: white;
+  padding: 10px 0px;
+  width: 40px;
+  text-align: center;
+  transition: all 0.25s linear;
+  margin-right: 10px;
+}
+.waves-light {
+  width: 100%;
+}
+.material-icons {
+  color: green;
+  float: right;
+  margin-right: 10px;
+}
+.icon-box {
+  flex-grow: 8;
+}
+/*styling react modal --*/
+.ReactModalPortal > div {
+  opacity: 0;
+}
+.ReactModalPortal > .ReactModal__Overlay {
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ReactModalPortal > .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+.ReactModalPortal > .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.mate {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.ourModal {
+  font-family: "Playfair Display", serif;
+  background-color: #607d8b;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  outline: none;
+  color: black;
+}
+
+.ourModal span {
+  font-size: 18px;
+  display: inline-block;
+  padding: 0px 4px;
+  background-color: #f6f6f6cc;
+  border-radius: 2px;
+}
+.noValue-btn {
+  margin-top: 10px;
+}
+
+.replay {
+  text-align: center;
+  display: inline-block;
+  margin: 10px auto;
+}
